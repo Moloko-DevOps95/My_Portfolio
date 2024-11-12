@@ -639,3 +639,29 @@ footer .copyright{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.skill-wrapper {
+    margin-top: 20px;
+}
+.skill {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 25px;
+}
+.progress {
+    background-color: var(--primary);
+    height: 100%;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+}
+
