@@ -24,7 +24,7 @@ html{
 }
 header{
     background: var(--dark);
-    clip-path:polygon(0 0, 100% 0, 100% 100%, 70% 96%, 0 100%);
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
 }
 .container{
     max-width:1152px;
@@ -82,10 +82,8 @@ header nav .branding{
     padding:3rem 0;
 }
 .hero .left img {
-    width: 450px;
-    height: 500px;
-    margin-top: -190px; /* Adjust the value as needed */
-    transform: translateX(-70px); /* Adjust the value as needed */
+    width: 400px;
+   
 }
 .hero .right{
     color:var(--pure);
@@ -109,7 +107,7 @@ header nav .branding{
     margin-bottom:2rem;
 }
 .hero .right {
-    margin-top:2rem;
+    margin-top:-7rem;
 }
 
 section{
@@ -241,8 +239,8 @@ section.freelancer{
     padding-bottom:14rem;
 }
 section.freelancer h1{
-    font-size:3rem;
-    margin-bottom:0.5rem;
+    font-size:2rem;
+    margin-bottom:1.5rem;
 }
 section.freelancer p{
     font-size:1.3rem;
@@ -558,7 +556,7 @@ footer .copyright{
         font-size: 3rem;
     }
     .hero{
-        padding-top:10rem;
+        padding-top:18rem;
     }
     header{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
@@ -664,4 +662,9 @@ footer .copyright{
     color: white;
     text-align: center;
 }
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
 
