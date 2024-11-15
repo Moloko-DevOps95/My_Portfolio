@@ -1,6 +1,6 @@
 @import 'utilities.css';
 :root{
-    --primary:#FFA500;
+    --primary:#b88018;
     --dark:#161616;
     --pure:#FFFFFF;
     --ternary:#898989;
@@ -666,5 +666,16 @@ footer .copyright{
     font-size: 40px;
     margin-bottom: 10px;
 }
+.footer-title {
+    font-size: 24px; 
+    color: var(--primary);  
+}
+
+.icon {
+    font-size: 48px; /* Adjust size as needed */
+    color: var(--primary);  /* Replace with your desired color */
+    margin-bottom: 15px; /* Space between icon and heading */
+}
+
 
 
