@@ -249,8 +249,8 @@ section.freelancer p{
 }
 
 section.reviews .slider .slide img{
-    width:100px;
-    height:100px;
+    width:200px;
+    height:200px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -676,6 +676,27 @@ footer .copyright{
     color: var(--primary);  /* Replace with your desired color */
     margin-bottom: 15px; /* Space between icon and heading */
 }
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin: 20px 0;
+}
+
+.footer-socials i {
+    font-size: 24px; /* Icon size */
+    color: #555; /* Default icon color */
+    cursor: default; /* Prevent pointer cursor */
+    user-select: none; /* Prevent text selection */
+    opacity: 0.8; /* Slight transparency */
+    transition: color 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover */
+}
+
+.footer-socials i:hover {
+    color: orange; /* Change color to orange */
+    opacity: 1; /* Remove transparency */
+}
+
 
 
 
