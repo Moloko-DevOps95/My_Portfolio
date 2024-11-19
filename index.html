@@ -314,10 +314,12 @@
                     </div>
                 </div>
         
-                <form action="" class="contact-form">
+                <form class="contact-form" form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="f3eccaae-e524-45f3-80ef-f38836cca7d8">
                     <div class="input-wrap">
-                        <input type="text" placeholder="Your Name *" required class="input-field">
-                        <input type="email" placeholder="Your Email *" required class="input-field">
+                        
+                        <input type="text" name="name"placeholder="Your Name *" required class="input-field">
+                        <input type="email" name="email"placeholder="Your Email *" required class="input-field">
                     </div>
                     <div class="input-wrap-2">
                         <input type="text" placeholder="Subject..." class="input-field">
