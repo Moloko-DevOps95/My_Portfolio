@@ -140,7 +140,7 @@ section.about .social{
     display:flex;
 }
 section.about .social a{
-    background:var(--dark);
+    background:var(--pure);
     display:flex;
     align-items:center;
     justify-content:center;
@@ -162,8 +162,8 @@ section.about .social a:hover{
     background:var(--primary);
 }
 section.about .social a img{
-    width:100%;
-    height:100%;
+    width:120%;
+    height:120%;
     padding:0.5rem;
 }
 
