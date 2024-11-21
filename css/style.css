@@ -654,6 +654,7 @@ footer .copyright{
     border-radius: 20px;
     overflow: hidden;
     height: 25px;
+    
 }
 .progress {
     background-color: var(--primary);
@@ -661,6 +662,8 @@ footer .copyright{
     line-height: 25px;
     color: white;
     text-align: center;
+    width: 0%; 
+    transition: width 1.5s 
 }
 .icon {
     font-size: 40px;
@@ -672,29 +675,30 @@ footer .copyright{
 }
 
 .icon {
-    font-size: 48px; /* Adjust size as needed */
-    color: var(--primary);  /* Replace with your desired color */
-    margin-bottom: 15px; /* Space between icon and heading */
+    font-size: 48px; 
+    color: var(--primary);  
+    margin-bottom: 15px; 
 }
 .footer-socials {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Space between icons */
+    gap: 15px; 
     margin: 20px 0;
 }
 
 .footer-socials i {
-    font-size: 24px; /* Icon size */
-    color: #555; /* Default icon color */
-    cursor: default; /* Prevent pointer cursor */
-    user-select: none; /* Prevent text selection */
-    opacity: 0.8; /* Slight transparency */
-    transition: color 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover */
+    font-size: 24px; 
+    color: #555; 
+    cursor: default; 
+    user-select: none; 
+    opacity: 0.8; 
+    transition: color 0.3s ease, opacity 0.3s ease; 
 }
 
 .footer-socials i:hover {
-    color: orange; /* Change color to orange */
-    opacity: 1; /* Remove transparency */
+    color: orange; 
+    opacity: 1; 
+
 }
 
 
