@@ -1,69 +1,63 @@
-My Portfolio
-Welcome to my portfolio! This repository showcases my work as a DevOps Engineer, highlighting my skills, projects, and professional experience.
+# My Personal Portfolio 
+> A clean, beautiful, responsive portfolio website!
 
-Table of Contents
-Introduction
-Features
-Installation
-Usage
-Project Structure
-Contributing
-License
-Contact
-Introduction
-This portfolio is a comprehensive display of my professional journey, including my skills, projects, and experience. It serves as a digital resume and a showcase of my technical abilities.
+> https://moloko-devops95.github.io/My_Portfolio/
 
-Features
-Responsive web design
-Detailed sections on my skills, projects, and experience
-Downloadable resume
-Contact form for inquiries
-Installation
-To run this project locally, follow these steps:
 
-Clone the repository:
+### Website Preview
+<p align="center"> 
+  <kbd>
+    <a href="https://moloko-devops95.github.io/My_Portfolio/" target="_blank"><img src="examples/preview.gif">
+  </a>
+  </kbd>
+</p>
 
-git clone https://github.com/Moloko-DevOps95/My_Portfolio.git
-cd My_Portfolio
-Open index.html in your web browser to view the portfolio.
+:star: Star me on GitHub — it helps!
 
-Usage
-This portfolio is designed to be user-friendly and easy to navigate. Here are some key sections:
+## Features 📋
+⚡️ Fully Responsive\
+⚡️ Valid HTML5, CSS3 & JavaScript\
+⚡️ Easy to modify
 
-Home: An introduction and a brief overview of who I am.
-About: Detailed information about my background and skills.
-Services: The services I offer as a DevOps Engineer.
-Experience: My professional experience and roles.
-Projects: A showcase of my personal projects.
-Skills: A list of my technical skills and proficiencies.
-Contact: Information on how to get in touch with me.
-Project Structure
-The project comprises the following main files and directories:
+## Installation & Deployment 📦
+- Clone the repository and modify the content of <b>index.html</b> according to your requirement.
+- Add or remove images from `https://moloko-devops95.github.io/My_Portfolio/img/` directory as per your requirement.
+- I highly recommend to use [Github Pages](https://github.com/Moloko-DevOps95/My_Portfolio/settings/pages) to deploy the website the EASIEST WAY.
+- To deploy your website, first you need to create github repository with name `<your-github-username>.github.io`. Please don't give any other name.
+- Push the generated code to the `main` branch of this repository.
+- <b>NOTE:</b> Make sure to set `analyticsId` from your Google Analytics account inside the Google Analytics script tag, if you want to use your own Google Analytics account.
 
-index.html: The main HTML file for the portfolio.
-css/: Directory containing CSS stylesheets.
-images/: Directory containing images used in the portfolio.
-js/: Directory containing JavaScript files.
-README.md: This file.
-Contributing
-If you would like to contribute to this project, please follow these steps:
+## Sections 📚
+✔️ Home\
+✔️ About Me\
+✔️ What I do\
+✔️ My Experience\
+✔️ Open to Work\
+✔️ My Reference\
+✔️ Project
 
-Fork the repository.
-Create a new branch:
-git checkout -b feature-branch
-Make your changes.
-Commit your changes:
-git commit -m 'Add new feature'
-Push to the branch:
-git push origin feature-branch
-Open a pull request.
-License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+To view a live example, **[click here](https://moloko-devops95.github.io/My_Portfolio/)**
 
-Contact
-Feel free to contact me through the following means:
+## Tools Used 🛠️
+* [<b>GitHub Pages</b>](https://github.com/Moloko-DevOps95/My_Portfolio/settings/pages) - To host my static website (HTML, CSS, JS).
+* [<b>Materialize</b>](https://materializecss.com/) - A CSS framework to get Google's Material Design components.
+* [<b>Typed.js</b>](https://mattboldt.com/demos/typed-js/) - JavaScript Library
 
-Phone: +27 68 200 4450
-Email: Moloko.Rakgaole@capaciti.org.za
-Address: 192 Church St, Halfway House, Midrand, 1685
-You can also visit my portfolio live at My Portfolio.
+## Contributing 💡
+#### Step 1
+
+- **Option 1**
+    - 🍴 Fork this repo!
+
+- **Option 2**
+    - 👯 Clone this repo to your local machine.
+
+
+#### Step 2
+
+- **Build your code** 🔨🔨🔨
+
+#### Step 3
+
+- 🔃 Create a new pull request.
+
