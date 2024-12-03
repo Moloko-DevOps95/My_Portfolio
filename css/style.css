@@ -469,6 +469,17 @@ footer .footer-socials{
 footer .copyright{
     color:var(--ternary);
 }
+.footer-socials a img {
+    width: 30px;
+    margin: 0 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.footer-socials a img:hover {
+    filter: var(--primary);
+    color: #b88018;
+}
 
 
 .site-main-wrapper{
@@ -885,8 +896,8 @@ footer .copyright{
 }
 
 #main-nav .btn:hover {
-    background-color: #444; 
-    color: #1c1982; 
+    background-color: var(--secondary); 
+    color: var(--pure); 
 }
 
 /* Responsive Design: Show Hamburger on Mobile */
@@ -913,11 +924,61 @@ footer .copyright{
 
 .branding a:hover {
     color: #ddd; 
+}
 
 .branding h6 {
     margin: 0;
     font-size: 1.8rem;
     font-weight: bold;
     cursor: pointer;
+}
+.loading-dots {
+    display: inline-block;
+}
+
+.loading-dots span {
+    display: inline-block;
+    animation: loading 1s infinite;
+}
+
+.loading-dots span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loading-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+.loading-dots::after {
+    content: '...';
+    display: inline-block;
+    animation: blink 1.4s infinite both;
 }
 
