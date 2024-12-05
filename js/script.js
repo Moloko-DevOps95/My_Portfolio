@@ -103,19 +103,19 @@ async function generateBotResponse(userMessage, loadingMessageElement) {
         case lowerCaseMessage.includes('skills'):
             botMessageText = '<i class="fas fa-tools"></i> Moloko has skills in HTML, CSS, JavaScript, Java, Spring Boot, MySQL, PostgreSQL, and cloud computing.';
             break;
-        case lowerCaseMessage.includes('contact'):
+        case ['contact', 'phone', 'email', 'address'].some(keyword => lowerCaseMessage.includes(keyword)):
             botMessageText = '<i class="fas fa-address-book"></i> You can contact Moloko by phone at +27 68 200 4450, by email at Moloko.Rakgaole@capaciti.org.za, or visit him at 192 Church St, Halfway House, Midrand, 1685.';
             break;
-        case lowerCaseMessage.includes('experience','work experience','professional experience'):
+        case ['experience', 'work experience', 'professional experience'].some(keyword => lowerCaseMessage.includes(keyword)):
             botMessageText = '<i class="fas fa-briefcase"></i> Moloko has over 2 years of experience in Software development and DevOps.';
             break;
-        case lowerCaseMessage.includes('education',"qualifications","qualification"):
+        case ['education', 'qualifications', 'qualification'].some(keyword => lowerCaseMessage.includes(keyword)):
             botMessageText = '<i class="fas fa-graduation-cap"></i> I have a National Diploma In Information Technology(Software Development) from Tshwane University of Technology and A certificate in Core Computer Skills From Avuxeni Computer Academy.';
             break;
         case lowerCaseMessage.includes('projects'):
             botMessageText = '<i class="fas fa-project-diagram"></i> I have worked on various projects including e-commerce websites, mobile apps, and cloud infrastructure setups.';
             break;
-        case lowerCaseMessage.includes('hobbies','interests'):
+        case ['hobbies', 'interests'].some(keyword => lowerCaseMessage.includes(keyword)):
             botMessageText = '<i class="fas fa-futbol"></i> In my free time, I enjoy watching soccer, reading tech blogs, and playing pool table.';
             break;
         case lowerCaseMessage.includes('portfolio'):
@@ -124,10 +124,10 @@ async function generateBotResponse(userMessage, loadingMessageElement) {
         case lowerCaseMessage.includes('resume'):
             botMessageText = '<i class="fas fa-file-alt"></i> You can download my resume from the link provided on the homepage.';
             break;
-        case lowerCaseMessage.includes('location','where are you based','where are you located','where are you from', 'where are you situated','where do you stay'):
+        case ['location', 'where are you based', 'where are you located', 'where are you from', 'where are you situated', 'where do you stay'].some(keyword => lowerCaseMessage.includes(keyword)):
             botMessageText = '<i class="fas fa-map-marker-alt"></i> I am based in Midrand, South Africa.';
             break;
-        case lowerCaseMessage.includes('languages','programming languages'):
+        case ['languages', 'programming languages'].some(keyword => lowerCaseMessage.includes(keyword)):
             botMessageText = '<i class="fas fa-code"></i> I am proficient in HTML, CSS, JavaScript, Java, and Python.';
             break;
         case lowerCaseMessage.includes('frameworks'):
@@ -136,10 +136,10 @@ async function generateBotResponse(userMessage, loadingMessageElement) {
         case lowerCaseMessage.includes('tools'):
             botMessageText = '<i class="fas fa-wrench"></i> I use tools like Docker, Git, and Jenkins for my DevOps work.';
             break;
-        case lowerCaseMessage.includes('name','who are you','what is your name'):
+        case lowerCaseMessage.includes('name'):
             botMessageText = '<i class="fas fa-user"></i> My name is Moloko Rakgoale.';
             break;
-        case lowerCaseMessage.includes('certifications','certification','certified'):
+        case lowerCaseMessage.includes('certifications'):
             botMessageText = '<i class="fas fa-certificate"></i> I have certifications in ICDL.';
             break;
         case lowerCaseMessage.includes('achievements'):
@@ -172,7 +172,7 @@ async function generateBotResponse(userMessage, loadingMessageElement) {
         case lowerCaseMessage.includes('blog'):
             botMessageText = '<i class="fas fa-blog"></i> I write technical blogs on various topics related to DevOps and software development.';
             break;
-        case lowerCaseMessage.includes('github','projects'):
+        case lowerCaseMessage.includes('github'):
             botMessageText = '<i class="fab fa-github"></i> You can find my projects on GitHub at https://github.com/Moloko-DevOps95.';
             break;
         case lowerCaseMessage.includes('linkedin'):
@@ -187,7 +187,7 @@ async function generateBotResponse(userMessage, loadingMessageElement) {
         case lowerCaseMessage.includes('age'):
             botMessageText = '<i class="fas fa-birthday-cake"></i> 29 years old.';
             break;
-        case lowerCaseMessage.includes('learning','What are you learning', 'What are you currently learning'):
+        case lowerCaseMessage.includes('learning'):
             botMessageText = '<i class="fas fa-book-reader"></i> I am currently learning .NET, C#, PHP, and Laravel.';
             break;
         case lowerCaseMessage.includes('challenges'):
@@ -202,28 +202,21 @@ async function generateBotResponse(userMessage, loadingMessageElement) {
         case lowerCaseMessage.includes('values'):
             botMessageText = '<i class="fas fa-heart"></i> I value integrity, hard work, and continuous learning.';
             break;
-        case lowerCaseMessage.includes('motivation','What motivates you', 'What motivates you to work'):
+        case lowerCaseMessage.includes('motivation'):
             botMessageText = '<i class="fas fa-motivation"></i> I am motivated by the desire to create impactful solutions.';
             break;
         case lowerCaseMessage.includes('inspiration'):
             botMessageText = '<i class="fas fa-lightbulb"></i> I am inspired by tech leaders and innovators.';
             break;
-        case lowerCaseMessage.includes('Role','What do you do', 'Job', 'What do you do for a living'):
-            botMessageText = '<i class="fas fa-book"></i> Moloko Rakgoale is a Software developer and DevOps Engineer.';
+        case lowerCaseMessage.includes('books'):
+            botMessageText = '<i class="fas fa-book"></i> I enjoy reading books on technology and personal development.';
             break;
-        case lowerCaseMessage.includes('Where do you work', 'Where do you work at', 'Where do you work from'):
-            botMessageText = '<i class="fas fa-podcast"></i> Moloko is currently working as a DevOps Intern at Capaciti.';
+        case lowerCaseMessage.includes('podcasts'):
+            botMessageText = '<i class="fas fa-podcast"></i> I listen to tech podcasts to stay updated with industry trends.';
             break;
         case lowerCaseMessage.includes('events'):
             botMessageText = '<i class="fas fa-calendar-alt"></i> I attend tech conferences and meetups to network and learn.';
             break;
-        case lowerCaseMessage.match(/^\d+(\s*[\+\-\*\/]\s*\d+)+$/) !== null:
-                try {
-                    botMessageText = `The result is ${eval(lowerCaseMessage)}`;
-                } catch (error) {
-                    botMessageText = 'There was an error processing your calculation.';
-                }
-                break;
         case lowerCaseMessage.includes('moloko'):
             botMessageText = '<i class="fas fa-user"></i> Hi, That is me, Moloko Rakgoale.';
             break;
