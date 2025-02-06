@@ -305,9 +305,10 @@ section.work{
     background:var(--light);
 }
 section.work .card-wrapper{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-gap:2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 section.work .card-wrapper .card{
     position:relative;
@@ -981,4 +982,3 @@ footer .copyright{
     display: inline-block;
     animation: blink 1.4s infinite both;
 }
-
